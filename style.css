@@ -339,7 +339,7 @@ section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
@@ -482,8 +482,14 @@ section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
 .project-info h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.3rem; }
 .project-info p { font-size: 0.82rem; color: var(--text-secondary); }
 
-.project-featured { grid-column: 1 / -1; }
-.project-featured .project-thumb { aspect-ratio: 21/9; }
+.project-coming-soon {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 0.85rem;
+  color: var(--text-muted); letter-spacing: 0.05em;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+}
 
 .portfolio-more { margin-top: 2rem; text-align: center; }
 .portfolio-more a {
@@ -681,8 +687,10 @@ footer a:hover { color: var(--accent); }
   .about-stats { flex-direction: column; gap: 1rem; }
   section { padding: 4rem 1.25rem; }
   .hero { padding: 7rem 1.25rem 4rem; }
-  .project-featured { grid-column: auto; }
-  .project-featured .project-thumb { aspect-ratio: 16/10; }
   .services-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
   .portfolio-grid { grid-template-columns: 1fr; }
 }
