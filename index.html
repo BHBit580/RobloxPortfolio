@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USain | Professional Roblox Scripting Services</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Our Stylesheet (separate file!) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo"><span>US</span>ain</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">home</a>
+    <a href="#services">services</a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#about">about</a>
+    <a href="#testimonials">testimonials</a>
+    <a href="#contact" class="nav-cta">hire me</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero-status">
+    <div class="dot"></div>
+    $status — available
+  </div>
+  <h1>Roblox <span class="accent">Scripting</span><br>Services</h1>
+  <p>Reliable, clean code with scalable architecture. Years of experience delivering performance-optimized systems for Roblox games.</p>
+  <div class="hero-btns">
+    <a href="#portfolio" class="btn btn-primary">portfolio</a>
+    <a href="#contact" class="btn btn-secondary">contact →</a>
+  </div>
+  <div class="scroll-indicator">Scroll</div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="reveal">
+    <div class="section-label">What I Offer</div>
+    <h2 class="section-title">Services</h2>
+    <p class="section-desc">Professional Roblox development services tailored to your project needs.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">⚔️</div>
+      <h3>Combat Systems</h3>
+      <p>Advanced PvP and PvE combat mechanics with smooth animations and hit detection.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏗️</div>
+      <h3>Game Frameworks</h3>
+      <p>Scalable, modular frameworks that serve as the backbone for your game.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💾</div>
+      <h3>Data Stores & Saving</h3>
+      <p>Reliable data persistence with automatic backups and session locking.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🖥️</div>
+      <h3>UI Logic & Backend</h3>
+      <p>Clean UI systems with reactive state management and server communication.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <h3>Optimization & Refactoring</h3>
+      <p>Performance improvements and code cleanup for existing projects.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Custom Systems</h3>
+      <p>Tailored solutions for unique game mechanics and features.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PORTFOLIO ═══ -->
+<section id="portfolio">
+  <div class="reveal">
+    <div class="section-label">My Work</div>
+    <h2 class="section-title">Portfolio</h2>
+    <p class="section-desc">A selection of projects showcasing my experience and expertise.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="project-card project-featured reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+        <div class="placeholder-icon">🌮</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Road-Side Shawarma</h3>
+        <p>Lead Scripter for the December update — implementing new features and gameplay systems.</p>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #0f2027, #203a43);">
+        <div class="placeholder-icon">🚗</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Vehicle System</h3>
+        <p>Full physics-based vehicle controller with drifting and damage.</p>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #1a0a2e, #2d1b69);">
+        <div class="placeholder-icon">🏃</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Movement System</h3>
+        <p>Fluid character movement with parkour and momentum mechanics.</p>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #2e0a0a, #4a1515);">
+        <div class="placeholder-icon">⚔️</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Combat System</h3>
+        <p>Combo-based combat with hitstun, blocking, and knockback.</p>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #0a2e1a, #154a2e);">
+        <div class="placeholder-icon">💃</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Emote System</h3>
+        <p>Custom emote wheel with animation blending and social features.</p>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #2e2e0a, #4a4515);">
+        <div class="placeholder-icon">🔫</div>
+        <div class="project-overlay"><span>View</span></div>
+      </div>
+      <div class="project-info">
+        <h3>Tank System</h3>
+        <p>Fully controllable tanks with turret rotation and projectile physics.</p>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-more reveal">
+    <a href="https://x.com/USain" target="_blank">See more work on 𝕏 →</a>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Scripting Roblox Experiences</h2>
+  </div>
+  <div class="about-content">
+    <div class="reveal">
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-value" data-count="3">0+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" data-count="20">0+</div>
+          <div class="stat-label">Satisfied Clients</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>Hey, I'm <strong>USain</strong>! I've been scripting on Roblox for over 3 years now, working on everything from personal passion projects to large-scale commissions.</p>
+        <p>I specialize in both frontend and backend development — whether it's crafting smooth UI systems, building robust server architecture, or anything else your project needs in terms of scripting.</p>
+        <p>Clean code, solid performance, and reliable delivery are what I bring to every project. Let's build something great together.</p>
+      </div>
+    </div>
+    <div class="tech-stack reveal">
+      <h4>Tech Stack — Tools I Work With Daily</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Luau</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">Rojo</span>
+        <span class="tech-tag">Wally</span>
+        <span class="tech-tag">Git</span>
+        <span class="tech-tag">VS Code</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Knit</span>
+        <span class="tech-tag">ProfileService</span>
+        <span class="tech-tag">Rodux</span>
+      </div>
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 1rem;">And more based on project requirements</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials">
+  <div class="reveal">
+    <div class="section-label">Testimonials</div>
+    <h2 class="section-title">What Clients Say</h2>
+    <p class="section-desc">Feedback from developers and studios I've worked with.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">USain delivered exactly what we needed — clean, optimized code with zero issues on deployment. Communication was excellent throughout the entire project.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">JM</div>
+        <div>
+          <div class="testimonial-name">Jake M.</div>
+          <div class="testimonial-role">Game Studio Lead</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">One of the best scripters I've worked with. The combat system they built exceeded our expectations in every way. Would absolutely hire again.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">SR</div>
+        <div>
+          <div class="testimonial-name">Sam R.</div>
+          <div class="testimonial-role">Independent Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's Work Together</h2>
+  </div>
+  <div class="contact-content">
+    <div class="contact-left reveal">
+      <h3>Message me on Discord</h3>
+      <p>The fastest way to reach me for project inquiries.</p>
+      <div class="discord-box" onclick="copyDiscord(this)">
+        <div class="discord-label">Discord Username</div>
+        <div class="discord-handle">USain</div>
+        <div class="discord-copy">click to copy</div>
+      </div>
+      <div style="margin-top: 1.5rem;">
+        <a href="https://x.com/USain" target="_blank" class="btn btn-secondary">Follow on 𝕏 →</a>
+      </div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="contact-card">
+        <div class="contact-icon">✓</div>
+        <div>
+          <h4>Available</h4>
+          <p>Currently accepting new projects</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">⚡</div>
+        <div>
+          <h4>Fast Response</h4>
+          <p>Usually within 24 hours</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <div>
+          <h4>Paid Commissions Only</h4>
+          <p>Include project details and budget</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <a href="#home" style="display: inline-block; margin-bottom: 0.75rem; font-family: var(--font-mono); font-size: 0.9rem;">
+    ~/USain
+  </a>
+  <p>© 2026 USain. All rights reserved.</p>
+</footer>
+
+<!-- Our JavaScript (separate file!) -->
+<script src="script.js"></script>
+</body>
+</html>
